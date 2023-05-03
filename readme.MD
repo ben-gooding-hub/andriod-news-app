@@ -21,3 +21,5 @@
     1. But I've left out the implementation, mainly due to time, and that I've had some issues with the mocking functionality for Kotlin/Android
 
 6. To inspect the code, I suggest stepping through from the MainActivity as you can find everything from there
+   
+![](story_screen.png)![](main_screen.png)

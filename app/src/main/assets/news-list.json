@@ -6,7 +6,7 @@
       "type": "story",
       "headline": "Story Headline",
       "teaserText": "Story teaser text Story teaser text Story teaser text Story teaser text Story teaser text Story teaser text Story teaser text Story teaser text",
-      "creationDate": "2023-04-30T00:01:00Z",
+      "creationDate": "2023-05-02T00:01:00Z",
       "modifiedDate": "2020-11-19T00:00:00Z",
       "teaserImage": {
         "_links": {
@@ -24,7 +24,7 @@
       "type": "story",
       "headline": "Story Headline",
       "teaserText": "Story teaser text",
-      "creationDate": "2020-11-18T00:00:00Z",
+      "creationDate": "2023-05-04T00:01:00Z",
       "modifiedDate": "2020-11-19T00:00:00Z",
       "teaserImage": {
         "_links": {
@@ -46,7 +46,7 @@
       "type": "weblink",
       "headline": "Weblink headline",
       "weblinkUrl": "https://www.sky.com/links",
-      "creationDate": "2020-11-18T00:00:00Z",
+      "creationDate": "2023-05-05T00:01:00Z",
       "modifiedDate": "2020-11-19T00:00:00Z",
       "teaserImage": {
         "_links": {
@@ -64,7 +64,7 @@
       "type": "story",
       "headline": "Story headline",
       "teaserText": "Story teaser text",
-      "creationDate": "2020-11-18T00:00:00Z",
+      "creationDate": "2023-05-03T00:01:00Z",
       "modifiedDate": "2020-11-19T00:00:00Z",
       "teaserImage": {
         "_links": {
