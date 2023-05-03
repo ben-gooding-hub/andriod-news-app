@@ -2,21 +2,19 @@ package com.example.interviewtask.services.repositories
 
 import android.content.Context
 import com.example.interviewtask.news.NewsStory
-import com.example.interviewtask.services.utils.getJsonDataFromAsset
 import com.example.interviewtask.services.utils.parseJsonStringToClass
 import java.io.FileNotFoundException
 
-class NewsStoryRepository(storyId: String) : Repository<NewsStory> {
-    private val storyId = storyId
 
-    private fun getJsonPath(): String {
-        return "stories/sample_story_${storyId}.json"
-    }
 
-    override fun get(context: Context): NewsStory? {
+class NewsStoryRepository(context: Context) : Repository<NewsStory>(context) {
+    override val path = "story"
+
+    override fun get(options: List<String>?): NewsStory? {
+        if (options == null) throw IllegalArgumentException("Options parameter is required for NewsStoryRepository")
         try {
             return parseJsonStringToClass(
-                getJsonDataFromAsset(context, getJsonPath()),
+                fetchData(options),
                 NewsStory::class.java
             )
         } catch (e: FileNotFoundException) {

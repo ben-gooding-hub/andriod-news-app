@@ -2,19 +2,19 @@ package com.example.interviewtask.services.utils
 
 import java.util.logging.Level
 
-interface Logger {
-    fun log(message: String, level: Level? = Level.INFO)
+enum class LogDriver {
+    CONSOLE
 }
 
-private class ConsoleLogger : Logger {
-    override fun log(message: String, level: Level?) {
-        println(message)
+val logDriver = LogDriver.CONSOLE
+
+fun log(message: String, level: Level? = Level.INFO) {
+    when(logDriver) {
+        LogDriver.CONSOLE -> println(message)
     }
 }
 
-object LoggerInstance {
-    var logger: Logger = ConsoleLogger()
-}
+
 
 
 

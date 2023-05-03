@@ -29,7 +29,7 @@ import com.example.interviewtask.services.repositories.NewsStoryRepository
 
 @Composable
 fun CatNewsStoryPage(navController: NavController, storyId: String) {
-    val article = NewsStoryRepository(storyId).get(LocalContext.current)
+    val article = NewsStoryRepository(LocalContext.current).get(listOf(storyId))
     if (article == null) {
         MissingPage()
         return

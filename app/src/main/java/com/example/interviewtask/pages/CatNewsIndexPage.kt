@@ -24,12 +24,14 @@ import com.example.interviewtask.components.news.NewsWeblink
 import com.example.interviewtask.components.small.Title
 import com.example.interviewtask.news.NewsItemPreview
 import com.example.interviewtask.services.repositories.NewsItemPreviewRepository
-
+import com.example.interviewtask.services.utils.log
+import java.util.logging.Level
 
 @Composable
 fun CatNewsIndexPage(navController: NavController) {
-    val response = NewsItemPreviewRepository().get(LocalContext.current)
+    val response = NewsItemPreviewRepository(LocalContext.current).get()
     if(response == null) {
+        log("No item preview data found", Level.SEVERE)
         ErrorPage()
         return
     }
